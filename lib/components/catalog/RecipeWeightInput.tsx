@@ -44,14 +44,17 @@ export default function RecipeWeightInput({
           value={inputValue}
           onChange={handleChange}
           placeholder="Вес (г)"
-          className="w-full h-10 bg-bgWarm border border-border rounded px-3 text-sm text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+          className="w-full h-12 bg-bgWarm border border-border rounded px-4 text-base text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
           min="1"
+          inputMode="decimal"
+          autoComplete="off"
         />
+
       </div>
       <button
         type="button"
         onClick={handleReset}
-        className="h-10 px-3 rounded border border-border text-textMuted hover:text-primary hover:border-primary active:bg-bg transition-all text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+        className="h-12 px-5 rounded border border-border text-textMuted hover:text-primary hover:border-primary active:bg-bg transition-all text-base font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         disabled={inputValue === ''}
       >
         Сброс
